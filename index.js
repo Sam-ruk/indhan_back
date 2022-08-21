@@ -16,7 +16,7 @@ app.use(allowCrossDomain);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect('mongodb+srv://samruddhikhairnar:<Pass>@indhan.rvyqiea.mongodb.net/indhan?retryWrites=true&w=majority',{
+mongoose.connect('Enter your connection string here: mongodb+srv://samruddhikhairnar:<EnteryourPass>@indhan.rvyqiea.mongodb.net/indhan?retryWrites=true&w=majority',{
   useNewUrlParser: true,
   useFindAndModify: true,
   useUnifiedTopology:true
@@ -24,6 +24,6 @@ mongoose.connect('mongodb+srv://samruddhikhairnar:<Pass>@indhan.rvyqiea.mongodb.
 
 app.use(router);
 
-app.listen(3000, () => {
-  console.log("Server is running on PORT no. 3000");
+app.listen(4000, () => {
+  console.log("Server is running on PORT no. 4000");
 });
