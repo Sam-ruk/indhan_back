@@ -10,7 +10,10 @@ const ListingSchema = new mongoose.Schema({
   price:{type:mongoose.Types.Decimal128},
   unit:{type:String},
   properties:{type:String},
-  phone:{type:Number} 
+  phone:{type:Number},
+  sadd:{type:String}, 
+  scity:{type:String}, 
+  sstate:{type:String}
 });
 
 module.exports = mongoose.model('Listing',ListingSchema);

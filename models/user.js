@@ -10,7 +10,9 @@ const UserSchema = new mongoose.Schema({
   addr:{type:String}, 
   city:{type:String},
   pin:{type:Number},
-  state:{type:String}
+  state:{type:String},
+  lat:{type:mongoose.Types.Decimal128},
+  lon:{type:mongoose.Types.Decimal128},
 });
 
 module.exports = mongoose.model('User',UserSchema);
