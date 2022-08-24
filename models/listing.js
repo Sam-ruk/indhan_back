@@ -6,6 +6,7 @@ const ListingSchema = new mongoose.Schema({
   name:{type:String},
   desc:{type:String},
   type:{type:String},
+  stock:{type:Boolean},
   min:{type:mongoose.Types.Decimal128},
   price:{type:mongoose.Types.Decimal128},
   unit:{type:String},

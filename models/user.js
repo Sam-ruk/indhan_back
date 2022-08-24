@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
   name:{type:String},
   phone:{type: Number},
-  pass:{type:String}, 
+  pass:{type:String, select: false}, 
   type:{type:String}, 
   comp:{type:String}, 
   num:{type:String},
