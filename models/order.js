@@ -9,7 +9,13 @@ const OrderSchema = new mongoose.Schema({
   notif:{type:String},
   accept:{type:Boolean},
   status:{type:Boolean},
-  logistics:{type:Number}
+  logistics:{type:Number},
+  slat:{type:mongoose.Types.Decimal128},
+  slon:{type:mongoose.Types.Decimal128},
+  blat:{type:mongoose.Types.Decimal128},
+  blon:{type:mongoose.Types.Decimal128},
+  llat:{type:mongoose.Types.Decimal128},
+  llon:{type:mongoose.Types.Decimal128}
 });
 
 module.exports = mongoose.model('Order',OrderSchema);
