@@ -267,6 +267,18 @@ app.delete("/orders/:id", async (req, res) => {
   });
 });
 
+//Display BioMass Stats
+app.get('/mass', async (req, res) => {
+  var i = 0;
+  await orderModel.find({otype:"mass"}, 
+    function (err, docs){
+      for(var j=0;i<docs.length;j++)
+        i+=docs[j].qty;
+      res.send(JSON.stringify({"count":i}));
+    });
+});
+
+
 //Display Ethanol Stats
 app.get('/ethanol', async (req, res) => {
   var i = 0;
