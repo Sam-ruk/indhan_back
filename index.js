@@ -16,8 +16,7 @@ app.use(allowCrossDomain);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-mongoose.connect('mongodb://localhost:27017',{
-  //'mongodb+srv://samruddhikhairnar:PoIuY0987$1@indhan.rvyqiea.mongodb.net/indhan?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://indhan:passwd@cluster0.oeqorfz.mongodb.net/indhan?retryWrites=true&w=majority',{
   useNewUrlParser: true,
   useFindAndModify: true,
   useUnifiedTopology:true
