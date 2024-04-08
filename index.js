@@ -15,6 +15,7 @@ var allowCrossDomain = function(req,res,next) {
 app.use(allowCrossDomain);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
 
 mongoose.connect('mongodb+srv://indhan:passwd@cluster0.oeqorfz.mongodb.net/indhan?retryWrites=true&w=majority',{
   useNewUrlParser: true,
